@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Secret Memo</title>
+    <title>binary-secret-message</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header>
+        <nav>Binary🌎Secret Messg📧</nav>
+    </header>
     
+    <div class="dropdown" id="dropdown">
+        <label class="input-label" for="input-label">Choose the Input Language:</label>
+        <div class="select-div">
+            <select name="select-tag" class="select-tag" id="input-lang">
+                <option value="binary">Binary</option>
+                <option value="English">English</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="flexcol">
+        <div class="io-container">
+            <textarea class="io input-txtarea" id="input-txtarea" cols="30" rows="10"></textarea>
+            <div class="io output-div" id="output-div"></div>
+        </div>
+        <button class="btn" id="btn" onclick="playAudio()">TRANSLATE IT 🛎️</button>
+    </div>
+
+
+    <footer>Made with 🤍 by <a class="link" href="http://aadhar54.netlify.com/">aadhar</a></footer>
     <script src="./app.js"></script>
 </body>
 </html>
