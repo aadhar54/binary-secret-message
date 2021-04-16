@@ -24,61 +24,12 @@ header {
   font-weight: bolder;
 }
 
-.dropdown {
-  padding: 1rem;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.select-div {
-  margin-left: 2rem;
-  width: 12rem;
-  height: 3rem;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.25rem;
-}
-
-.select-div::after {
-  content: '\25BC';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.5rem 1rem;
-  background-color: var(--secondary-color);
-  pointer-events: none;
-}
-
-.select-div:hover::after {
-  color: var(--tertiary-color);
-}
-
-.select-div::after {
-  transition: 0.25s all ease;
-}
-
-.select-tag {
-  width: 100%;
-  height: 100%;
-  appearance: none;
-  outline: none;
-  font-weight: bolder;
-  font-size: larger;
-  background: var(--primary-color);
-  padding: 0 0 0 1rem;
-  color: #fff;
-  cursor: pointer;
-}
-
 .flexcol {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .io-container {
@@ -123,6 +74,8 @@ header {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   padding: 2rem;
   background-color: var(--primary-color);
   text-align: center;

@@ -4,27 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>binary-secret-message</title>
+    <title>morse code</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <nav>Binary🌎Secret Messg📧</nav>
+        <nav>ENGLISH TO M0RS📧 CONVERTOR</nav>
     </header>
-    
-    <div class="dropdown" id="dropdown">
-        <label class="input-label" for="input-label">Choose the Input Language:</label>
-        <div class="select-div">
-            <select name="select-tag" class="select-tag" id="input-lang">
-                <option value="binary">Binary</option>
-                <option value="English">English</option>
-            </select>
-        </div>
-    </div>
     
     <div class="flexcol">
         <div class="io-container">
-            <textarea class="io input-txtarea" id="input-txtarea" cols="30" rows="10"></textarea>
+            <textarea spellcheck="false" placeholder="Please enter the text in english here which you wanna convert to morsě" class="io input-txtarea" id="input-txtarea" cols="30" rows="10"></textarea>
             <div class="io output-div" id="output-div"></div>
         </div>
         <button class="btn" id="btn" onclick="playAudio()">TRANSLATE IT 🛎️</button>
