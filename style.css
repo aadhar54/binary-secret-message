@@ -29,7 +29,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 
 .io-container {
@@ -37,7 +37,6 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0.5rem;
 }
 
 .io {
@@ -62,6 +61,7 @@ header {
   color: var(--tertiary-color);
   background-color: var(--secondary-color);
   border-radius: 1rem;
+  margin: 2rem 0 3rem 0;
 }
 
 .btn:hover {
@@ -74,12 +74,24 @@ header {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   padding: 2rem;
   background-color: var(--primary-color);
   text-align: center;
   font-size: 2rem;
   font-weight: bolder;
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .io-container {
+    flex-direction: column;
+  }
+
+  .io {
+    width: 450px;
+  }
+
+  .btn {
+    width: 40%;
+  }
 }

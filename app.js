@@ -10,8 +10,8 @@ function playAudio(){
 btn.addEventListener('click',()=>{
     let input = inputTextArea.value;
     fetch('https://api.funtranslations.com/translate/morse.json?text='+input)
-    .then(resonse=>resonse.json)
-    .then((json)=>{
+    .then(resonse=>resonse.json())
+    .then(json=>{
         outputDiv.innerText = json.contents.translated;
     })
 })
